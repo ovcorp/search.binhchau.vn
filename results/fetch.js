@@ -45,7 +45,7 @@ function getBlogPosts(url, number) {
         const { id, link, title, date, slug, status } = post;
         result += `
         <tr>
-        <td><a href="/search/queries/?d=${url}&id=${id}&s=${slug}">${title.rendered}</a></a></td>     
+        <td><a href="/queries/?d=${url}&id=${id}&s=${slug}">${title.rendered}</a></a></td>     
         <td>${id}</td>    
         <td>${date}</td>    
         </tr>
