@@ -1,0 +1,12 @@
+// Get Data v1
+$("#form").submit((e) => {
+  e.preventDefault();
+  var url = $("#url").val();
+  var number = $("#number").val();
+  getBlogPosts(url, number);
+});
+
+$("#number").change((e) => {
+  number = $(this).val();
+});
+
