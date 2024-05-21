@@ -3,68 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gaco CodeSpace</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    />
+    <title>WordPress Crawlers</title>
+    <link rel="icon" href="/favicon-gaco.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
-    <div class="container mt-5">
+  <body class="p-3">
+    <div
+      class="wrapper container h-100 d-flex align-items-center justify-content-center"
+    >
       <div class="row">
-        <div class="col-12">
-          <h1>CodeSpace</h1>
-          <p class="mb-5">Khu vực demo và thử nghiệm</p>
-          <table class="table table-bordered">
-            <thead class="thead-light">
-              <tr>
-                <th>WordPress API</th>
-                <th>Woocommerce API</th>
-                <th>Blogger API</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <a
-                    class="btn btn-light border mb-1"
-                    href="./wordpress-api/ajax/"
-                    >Ajax</a
-                  >
-                  <a
-                    class="btn btn-light border mb-1"
-                    href="./wordpress-api/fetch/"
-                    >Fetch</a
-                  >
-                  <a
-                    class="btn btn-light border mb-1"
-                    href="./wordpress-api/xmlhttprequest/"
-                    >XMLHttprequest</a
-                  >
-                </td>
-                <td>
-                  <a
-                    class="btn btn-light border mb-1"
-                    href="./woocommerce-api/products/"
-                    >Products</a
-                  >
-                </td>
-                <td>x</td>
-              </tr>
-              <tr>
-                <td>
-                  <a class="btn btn-light border mb-1" href="./search/"
-                    >Search</a
-                  >
-                </td>
-                <td>x</td>
-                <td>x</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="brand mb-4">
+          <div class="row align-items-center">
+            <div class="wp-img col">
+              <img
+                src="/img/WordPress-logotype-wmark.webp"
+                alt="wordpress-search"
+                style="width: auto !important; height: 110px !important"
+              />
+            </div>
+            <div class="wp-h1 col">
+              <h1 class="">WordPress Search</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <form action="/search/results/" method="GET" id="form">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span
+                  class="input-group-text"
+                  style="height: 55px"
+                  id="basic-addon3"
+                  >https://</span
+                >
+              </div>
+              <div class="col-lg">
+                <input
+                  style="height: 55px"
+                  type="text"
+                  name="furl"
+                  id="url"
+                  class="form-control"
+                  placeholder="thanhcong.com"
+                  required
+                />
+              </div>
+              <div class="col-xs-2">
+                <input
+                  style="height: 55px"
+                  type="number"
+                  name="fnumber"
+                  class="form-control"
+                  placeholder="Số bài viết..."
+                  value=""
+                  id="number"
+                  required
+                />
+              </div>
+              <button class="btn btn-primary btn-block">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </body>
+
+  <!-- Main JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <!-- Boostrap -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
 </html>
